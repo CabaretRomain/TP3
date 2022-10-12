@@ -1,0 +1,54 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    text-align: center;
+}
+h1{
+    color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    margin: 25px;
+}
+.container{
+    border: 2px solid green;
+    width: 50%;
+    height: auto;
+    border-radius: 26px;
+    margin: 0 auto;
+}
+
+
+button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 30px;
+    width: 50%;
+    border-radius: 999px;
+    border: 2px solid slategray;
+    background: #adff2f;
+    color: green;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+a{
+    text-decoration:none;
+}
+a:visited{
+    text-decoration:none;
+}
+
+button:hover{
+    background: rgb(13, 202, 13);
+    transform: rotate(5deg);
+    box-shadow: 10px 10px 0px 0px rgba(4, 99, 31, 0.4);
+    color: greenyellow;
+}
