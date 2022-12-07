@@ -116,6 +116,7 @@ function bonusFunc(){
     let article
     let price
     let quantity
+    let next 
 
     do{
         article = prompt("Votre article")

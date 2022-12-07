@@ -81,6 +81,10 @@ nav li:hover .submenu{
     border-top: 5px solid #f1dc4f;
     background-color: rgba(241, 211, 79, 0.15);
 }
+.menu-sql:hover{
+    border-top: 5px solid #06c1f4;
+    background-color: rgba(241, 211, 79, 0.15);
+}
 .menu-contact:hover{
     border-top: 5px solid #BBB;
     background-color: rgba(5, 167, 78, 0.15);
@@ -101,6 +105,9 @@ nav > ul > li:hover a {
 .menu-js .submenu{
     background-color: rgb(251, 216, 99);
 }
+.menu-sql .submenu{
+    background-color: #06c1f4;
+}
 .menu-mission .submenu{
     background-color:  rgb(24, 247, 124);;
 }
@@ -117,6 +124,10 @@ nav > ul > li:hover a {
 .menu-js .submenu li:hover{
     background-color: rgb(200, 165, 75);
 }
+.menu-sql .submenu li:hover{
+    background-color: #0e82a3;
+}
+
 .menu-mission .submenu li:hover{
     background-color: rgb(0, 220, 99);
 }
