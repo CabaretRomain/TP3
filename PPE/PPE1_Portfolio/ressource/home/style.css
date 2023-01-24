@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(94, 121, 143);
+}
+
+h1,
+p,
+h2 {
+  color: #ecffeb;
+}
+img {
+  float: right;
+  margin: 20px;
+}
+@media only screen and (max-width: 425px) {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}

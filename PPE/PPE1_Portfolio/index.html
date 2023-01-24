@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Premier projet scolaire en groupe" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="ressource/favicon.png"
+      type="image/x-icon"
+    />
+    <title>PPE2 - Portfolio</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <header>
+      <h1>Portfolio</h1>
+    </header>
+
+    <main>
+      <!--------------- RIGHT MENU --------------->
+      <div id="rightMenu">
+        <!-- SECTION HOME -->
+        <h2>MENU</h2>
+        <ul id="container">
+          <li>
+            <a
+              href="ressource/home/index.html"
+              target="mainFrame"
+              class="firstButton"
+            >
+              <button class="mainButton">Accueil</button>
+            </a>
+          </li>
+
+          <!-- SECTION CV -->
+          <li>
+            <a
+              href="ressource/CV/index.html"
+              target="mainFrame"
+              class="mainButton"
+            >
+              <button class="mainButton">CV</button>
+            </a>
+            <ul class="showMenu">
+              <li>
+                <a
+                  href="ressource/CV/ressource/CV.pdf"
+                  download="CV.pdf"
+                  class="subButton"
+                >
+                  <button>CV via PDF</button>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- SECTION PROJECT -->
+          <li>
+            <a href="#" class="mainButton">
+              <button>Projects</button>
+            </a>
+            <ul class="showMenu subProject">
+              <li>
+                <a
+                  href="ressource/Projects/Certificat_de_stage_SIO.pdf"
+                  class="subButton"
+                  target="mainFrame"
+                >
+                  <button>Stages</button>
+                </a>
+                <a
+                  href="ressource/Projects/ppe1.pdf"
+                  target="mainFrame"
+                  class="subButton"
+                >
+                  <button>PPE</button>
+                </a>
+                <a href="#" class="subButton">
+                  <button>TP</button>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- SECTION VEILLE -->
+          <li>
+            <button class="mainButton">Veille</button>
+            <ul class="showMenu subVeille">
+              <li>
+                <a
+                  href="ressource/Veilles/veilletechno.pdf"
+                  class="subButton"
+                  target="mainFrame"
+                >
+                  <button>Veille techno</button>
+                </a>
+                <a
+                  href="ressource/Veilles/veillejuridique.pdf"
+                  class="subButton"
+                  target="mainFrame"
+                >
+                  <button>Veille juridique</button>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- SECTION CONTACT -->
+
+          <li>
+            <a
+              href="ressource/Contact/index.html"
+              class="subButton"
+              target="mainFrame"
+            >
+              <button>Contact</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!--------------- LEFT MENU --------------->
+
+      <div id="leftMenu">
+        <iframe
+          src="ressource/home/index.html"
+          frameborder="0"
+          id="mainFrame"
+          name="mainFrame"
+          title="mainFrame"
+        ></iframe>
+        <img src="ressource/CV/ressource/user.jpeg" alt="Ma représentation" />
+      </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <h2>24/01/2023</h2>
+    </footer>
+  </body>
+</html>

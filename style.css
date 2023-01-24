@@ -85,6 +85,14 @@ nav li:hover .submenu{
     border-top: 5px solid #06c1f4;
     background-color: rgba(241, 211, 79, 0.15);
 }
+.menu-concept:hover{
+    border-top: 5px solid #0be6c1;
+    background-color: #0be6c231;
+}
+.menu-PPE:hover{
+    border-top: 5px solid #598392;
+    background-color: #5983923f;
+}
 .menu-concept .submenu{
     background-color: #0be6c1;
 }
@@ -114,6 +122,9 @@ nav > ul > li:hover a {
 .menu-concept .submenu{
     background-color: #15B097;
 }
+.menu-PPE .submenu{
+    background-color: #598392;
+}
 
 .menu-mission .submenu{
     background-color:  rgb(24, 247, 124);;
@@ -136,6 +147,10 @@ nav > ul > li:hover a {
 }
 .menu-concept .submenu li:hover{
     background-color: #0f8e79;
+}
+
+.menu-PPE .submenu li:hover{
+    background-color: #465c64;
 }
 
 
