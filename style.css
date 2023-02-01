@@ -69,6 +69,8 @@ nav li:hover .submenu{
     color: #222538;
     width: 270px;
 }
+
+/* ----------- HOVER LI  */
 .menu-html:hover{
     border-top: 5px solid #e44d26;
     background-color: rgba(228, 77, 38, 0.15);
@@ -89,13 +91,16 @@ nav li:hover .submenu{
     border-top: 5px solid #0be6c1;
     background-color: #0be6c231;
 }
+.menu-php:hover{
+    border-top: 5px solid #4F7CAC;
+    background-color: #0be6c231;
+}
 .menu-PPE:hover{
     border-top: 5px solid #598392;
     background-color: #5983923f;
 }
-.menu-concept .submenu{
-    background-color: #0be6c1;
-}
+
+
 .menu-contact:hover{
     border-top: 5px solid #BBB;
     background-color: rgba(5, 167, 78, 0.15);
@@ -107,6 +112,8 @@ nav li:hover .submenu{
 nav > ul > li:hover a {
     padding: 15px 30px 20px 30px;
 }
+
+/* ----------- LI  */
 .menu-html .submenu{
     background-color: rgb(230, 100, 40);
 }
@@ -122,13 +129,21 @@ nav > ul > li:hover a {
 .menu-concept .submenu{
     background-color: #15B097;
 }
+.menu-concept .submenu{
+    background-color: #0be6c1;
+}
 .menu-PPE .submenu{
     background-color: #598392;
+}
+.menu-php .submenu{
+    background-color: #4F7CAC;
 }
 
 .menu-mission .submenu{
     background-color:  rgb(24, 247, 124);;
 }
+
+/* ----------- HOVER SUBMENU LI  */
 .submenu li:hover a{
     color: #EEE;
     font-weight: bold;
@@ -148,7 +163,9 @@ nav > ul > li:hover a {
 .menu-concept .submenu li:hover{
     background-color: #0f8e79;
 }
-
+.menu-php .submenu li:hover{
+    background-color: #465c64;
+}
 .menu-PPE .submenu li:hover{
     background-color: #465c64;
 }
