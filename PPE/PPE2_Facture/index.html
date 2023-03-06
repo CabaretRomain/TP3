@@ -4,15 +4,334 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="ressource/favicon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>PPE 2</title>
+    <script src="main.js" async></script>
+    <title>PPE TP2 - Facture [Cabaret Romain]</title>
   </head>
   <body>
-    <h1>Soon . . .</h1>
-    <p>
-      "La triche n'est jamais une victoire, c'est simplement un moyen de masquer
-      sa propre faiblesse." - John Stephens
-    </p>
-    <!-- "La triche est un choix de lâche, qui ne mérite pas le respect ni la reconnaissance." - Auliq Ice -->
+    <div id="container">
+      <!-- HEADER  -->
+
+      <header>
+        <div class="headerLeft">
+          <img src="ressource/companyIcon.png" alt="Logo de l'entreprise" />
+        </div>
+        <div class="headerCenter">
+          <input
+            type="text"
+            name="nameCompany"
+            id="nameCompany"
+            placeholder="Nom de la compagnie"
+          />
+          <input
+            type="text"
+            name="addressCompany"
+            id="addressCompany"
+            placeholder="Adresse postale"
+          />
+          <input
+            type="text"
+            name="detailCompany"
+            id="detailCompany"
+            placeholder="Détail du contact"
+          />
+        </div>
+        <div class="headerRight">
+          <h1>FACTURE</h1>
+          <input type="text" name="dateContainer" id="dateContainer" />
+          <input
+            type="text"
+            name="idInvoice"
+            id="idInvoice"
+            placeholder="N° de facture"
+          />
+        </div>
+      </header>
+
+      <!-- requirements RUBRIQUE  -->
+
+      <p id="requirements">
+        Conditions de paiement, par exemple : dû dans X jours
+      </p>
+
+      <!-- SEND & RECIPIENT  -->
+
+      <div class="containerSendRecipient">
+        <!-- RECIPIENT  -->
+
+        <div id="recipient">
+          <h2>Destinataire</h2>
+          <input
+            type="text"
+            name="nameRecipient"
+            id="nameRecipient"
+            placeholder="Nom"
+            class="resetInput"
+          />
+          <input
+            type="text"
+            name="nameCompanyRecipient"
+            id="nameCompanyRecipient"
+            placeholder="Nom de la société"
+            class="resetInput"
+          />
+          <input
+            type="text"
+            name="addressRecipient"
+            id="addressRecipient"
+            placeholder="Adresse postale"
+            class="resetInput"
+          />
+          <input
+            type="text"
+            name="phoneRecipient"
+            id="phoneRecipient"
+            placeholder="Téléphone"
+            class="resetInput"
+          />
+          <input
+            type="text"
+            name="emailRecipient"
+            id="emailRecipient"
+            placeholder="Email"
+            class="resetInput"
+          />
+        </div>
+
+        <!-- SEND  -->
+
+        <div id="send">
+          <h2>Envoyez à</h2>
+          <input
+            type="text"
+            name="nameSend"
+            id="nameSend"
+            placeholder="Nom"
+            class="resetInput"
+          />
+          <input
+            type="text"
+            name="nameCompanySend"
+            id="nameCompanySend"
+            placeholder="Nom de la société"
+            class="resetInput"
+          />
+          <input
+            type="text"
+            name="addressSend"
+            id="addressSend"
+            placeholder="Adresse postale"
+            class="resetInput"
+          />
+          <input
+            type="text"
+            name="phoneSend"
+            id="phoneSend"
+            placeholder="Téléphone"
+            class="resetInput"
+          />
+          <input
+            type="text"
+            name="emailSend"
+            id="emailSend"
+            placeholder="Email"
+            class="resetInput"
+          />
+        </div>
+      </div>
+
+      <!-- MAIN TABLE  -->
+
+      <main>
+        <table>
+          <thead>
+            <tr>
+              <th>Description</th>
+              <th>Quantité</th>
+              <th>Prix unitaire</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- ROW 1 -->
+            <tr>
+              <td>
+                <input type="text" name="description1" class="description" />
+              </td>
+              <td><input type="number" name="quantite1" class="quantite" /></td>
+              <td>
+                <input type="number" name="prix_unitaire1" class="price" />
+              </td>
+              <td>
+                <input type="number" name="total1" class="total" value="0.00" />
+              </td>
+            </tr>
+
+            <!-- ROW 2 -->
+
+            <tr>
+              <td>
+                <input type="text" name="description2" class="description" />
+              </td>
+              <td><input type="number" name="quantite2" class="quantite" /></td>
+              <td>
+                <input type="number" name="prix_unitaire2" class="price" />
+              </td>
+              <td>
+                <input type="number" name="total2" class="total" value="0.00" />
+              </td>
+            </tr>
+
+            <!-- ROW 3 -->
+
+            <tr>
+              <td>
+                <input type="text" name="description3" class="description" />
+              </td>
+              <td><input type="number" name="quantite3" class="quantite" /></td>
+              <td>
+                <input type="number" name="prix_unitaire3" class="price" />
+              </td>
+              <td>
+                <input type="number" name="total3" class="total" value="0.00" />
+              </td>
+            </tr>
+
+            <!-- ROW 4 -->
+
+            <tr>
+              <td>
+                <input type="text" name="description4" class="description" />
+              </td>
+              <td><input type="number" name="quantite4" class="quantite" /></td>
+              <td>
+                <input type="number" name="prix_unitaire4" class="price" />
+              </td>
+              <td>
+                <input type="number" name="total4" class="total" value="0.00" />
+              </td>
+            </tr>
+
+            <!-- ROW 5 -->
+
+            <tr>
+              <td>
+                <input type="text" name="description5" class="description" />
+              </td>
+              <td><input type="number" name="quantite5" class="quantite" /></td>
+              <td>
+                <input type="number" name="prix_unitaire5" class="price" />
+              </td>
+              <td>
+                <input type="number" name="total5" class="total" value="0.00" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+
+      <!-- FOOTER CONCLUSION RUBRIQUE   -->
+
+      <footer>
+        <textarea
+          name=""
+          id=""
+          cols="25"
+          rows="10"
+          placeholder="Remarques, notes et instructions de paiement :"
+        ></textarea>
+
+        <div class="actionInput">
+          <div>
+            <label for="subAVGContainer">SOUS-TOTAL</label>
+            <input
+              type="number"
+              name="subAVGContainer"
+              id="subAVGContainer"
+              readonly
+            />
+          </div>
+
+          <div>
+            <label for="discountContainer">REMISE</label>
+            <input
+              type="number"
+              name="discountContainer"
+              id="discountContainer"
+              value="0.00"
+              min="0"
+              max="100"
+            />
+          </div>
+
+          <div>
+            <label for="discountAVGContainer" id="discountAVGContainerLabel"
+              >SOUS-TOTAL MOINS LES REMISES</label
+            >
+            <input
+              type="number"
+              name="discountAVGContainer"
+              id="discountAVGContainer"
+              readonly
+            />
+          </div>
+
+          <div>
+            <label for="taxationContainer">TAUX D'IMPOSITION</label>
+            <input
+              type="number"
+              name="taxationContainer"
+              id="taxationContainer"
+              value="0.00"
+              min="0"
+              max="100"
+            />
+          </div>
+
+          <div>
+            <label for="taxAVGContainer">TAXE TOTALE</label>
+            <input
+              type="number"
+              name="taxAVGContainer"
+              id="taxAVGContainer"
+              readonly
+            />
+          </div>
+
+          <div id="expManuDiv">
+            <label for="expManuContainer">EXPEDITO, MANUTENTIONE</label>
+            <input
+              type="number"
+              name="expManuContainer"
+              id="expManuContainer"
+              value="0.00"
+            />
+          </div>
+
+          <div>
+            <label for="balanceContainer"><strong>SOLDE DU </strong></label>
+            <input
+              type="number"
+              name="balanceContainer"
+              id="balanceContainer"
+              readonly
+            />
+          </div>
+        </div>
+        <!-- BUTTON -->
+
+        <div class="actionBtn">
+          <button id="calcBtn">Calculer</button>
+          <button id="addRowBtn">Ajouter une ligne</button>
+          <button id="printBtn">Remplir automatiquement</button>
+          <button id="removeBtn">Annuler</button>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
