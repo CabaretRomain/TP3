@@ -1,0 +1,45 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: bisque;
+}
+
+main div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+a button{
+    padding: 20px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 10px;
+    font-weight: bold;
+    font-style: none;
+    text-decoration: none;
+    text-align: center;
+    width: 260px;
+    font-size: 30px;
+    margin: 20px;
+}
+
+button:hover{
+    background-color: rgb(58, 54, 54);
+    cursor: pointer;
+}
+
+#PIX button{
+    background-color: orange!important;
+    border: none;
+}
+
+#PIX button:hover{
+    background-color: rgb(105, 77, 26)!important;
+}
